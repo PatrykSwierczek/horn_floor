@@ -1,0 +1,299 @@
+/* ============================================
+   RESPONSIVE DESIGN - Horn Floor Theme
+   ============================================ */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem !important;
+    }
+
+    .section-title {
+        font-size: 2.2rem !important;
+    }
+
+    /* Lineup grid - 2 columns on tablet */
+    .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Container & Spacing */
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    /* Header */
+    .site-header {
+        padding: 1rem 0 !important;
+    }
+
+    .site-header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .site-logo img {
+        max-height: 60px !important;
+    }
+
+    .main-navigation ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .main-navigation a {
+        font-size: 1.1rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding-top: 110px !important;
+        padding-bottom: 4rem !important;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem !important;
+        /* Increased from 2rem */
+        margin-bottom: 1rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .event-details {
+        font-size: 1.4rem !important;
+        /* Increased visibility */
+        margin-bottom: 1.5rem !important;
+    }
+
+    .hero p[itemprop="description"],
+    .hero p:not(.event-details) {
+        font-size: 1.1rem !important;
+        /* Better readability */
+        line-height: 1.6 !important;
+    }
+
+    .hero .btn {
+        font-size: 1rem !important;
+        padding: 0.9rem 1.8rem !important;
+        width: 100%;
+        /* Full width buttons on mobile */
+        margin-left: 0 !important;
+        margin-bottom: 1rem !important;
+        display: block;
+        text-align: center;
+    }
+
+    .hero .hero-content>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Section Titles */
+    .section-title,
+    .page-title {
+        font-size: 2rem !important;
+    }
+
+    /* Grid - Single column on mobile */
+    .grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    /* Cards */
+    .card {
+        padding: 2rem !important;
+    }
+
+    /* Artist Cards (Lineup page) */
+    .artist-card {
+        grid-template-columns: 1fr !important;
+        padding: 1.5rem !important;
+        gap: 1.5rem !important;
+    }
+
+    .artist-card h2 {
+        font-size: 2rem !important;
+    }
+
+    .artist-card p {
+        font-size: 1rem !important;
+    }
+
+    .artist-image {
+        height: 300px !important;
+        /* Taller images on mobile */
+    }
+
+    /* SoundCloud iframes */
+    iframe[src*="soundcloud"] {
+        height: 120px !important;
+    }
+
+    /* History Timeline */
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .timeline-item {
+        padding-left: 1.5rem !important;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .timeline-item p {
+        font-size: 1rem !important;
+    }
+
+    /* Gallery Grids */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.75rem !important;
+    }
+
+    .gallery-grid img {
+        height: 150px !important;
+    }
+
+    /* Contact Page */
+    .contact-info {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Buttons */
+    .btn {
+        font-size: 1rem !important;
+        padding: 0.8rem 1.5rem !important;
+    }
+
+    /* Social Links */
+    .footer-socials a,
+    .social-links a {
+        font-size: 1rem !important;
+        padding: 0.8rem !important;
+        margin: 0 0.25rem !important;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 3rem 0 2rem;
+        text-align: center;
+    }
+
+    .footer-socials {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+    /* Hero */
+    .hero h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .event-details {
+        font-size: 1.2rem !important;
+    }
+
+    .hero p {
+        font-size: 1rem !important;
+    }
+
+    /* Section Titles */
+    .section-title,
+    .page-title {
+        font-size: 1.8rem !important;
+    }
+
+    /* Cards */
+    .card h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .card p {
+        font-size: 0.95rem !important;
+    }
+
+    /* Artist Cards */
+    .artist-card h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .artist-image {
+        height: 250px !important;
+    }
+
+    /* Gallery - Single column on very small screens */
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .gallery-grid img {
+        height: 200px !important;
+    }
+
+    /* Navigation */
+    .main-navigation a {
+        font-size: 1rem !important;
+    }
+
+    /* Glitch effect - reduce on small screens */
+    .glitch::before,
+    .glitch::after {
+        display: none;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding-top: 80px !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .artist-image {
+        height: 200px !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+
+    .site-header,
+    .site-footer,
+    .btn,
+    audio,
+    iframe {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .hero,
+    .section {
+        page-break-inside: avoid;
+    }
+}
